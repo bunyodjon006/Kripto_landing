@@ -229,7 +229,7 @@
 /* Header End */
 /* Section 1 start */
 .section_one {
-    margin-top: 120px;
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -248,7 +248,7 @@
 }
 .item-left .item-text p {
     width: 500px;
-    line-height: 30px;
+    line-height: 40px;
     color: #fff;
     font-size: 1.4rem;
     font-family: sans-serif;
@@ -264,6 +264,7 @@
     color: #1c1c1c;
     font-size: 16px;
     font-weight: bold;
+    /* z-index: 1; */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -293,11 +294,13 @@
     right: 270px;
     z-index: 1;
 }
-
+.section_one {
+    z-index: 1;
+}
 /* Section 1 end */
 /* Section 1 start */
 .section_two .container {
-    margin-top: -20px;
+    margin-top: -50px;
 }
 .show_container {
     position: relative;
@@ -323,7 +326,7 @@
     height: 150px;
 }
 .item-left-container .item-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 360px;
 }
 .item-left-container .item-button {
@@ -332,10 +335,62 @@
 .item-left-container .item-button button {
     margin: 10px;
     padding: 10px;
+    /* z-index: 1; */
 }
 .item-left-container .item-button .items_button-one {
     background-color: transparent;
     color: #fff;
     padding: 10px;
     border: 1px solid #fff;
+}
+/* Section 2 end */
+/* Section 3 start */
+
+/* .section_three .container {
+    max-width: 1700px;
+    gap: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+.section_three .container {
+    gap: 100px;
+    margin-top: 30px;
+}
+.section_three .container .item-left .item-title h1{
+    width: 400px;
+}
+.section_three .container .item-left .item-text p {
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+.section_three .container .item-right #images {
+    width: 300px;
+    height: 400px;
+}
+.section_three .container .item-right {
+    display: flex;
+}
+.section_three .container .item-right .item_download {
+    margin-left: 10px;
+    margin-top: 320px;
+}
+.section_three .container .item-right .item_download  h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.section_three .container .item-right .item_download button {
+    padding: 10px ;
+    border: none;
+    border-radius: 8px;
+    z-index: 6;
+    background-color: white;
+    color: #1c1c1c;
+    font-size: 0.88rem;
+    font-weight: bold;
+    /* z-index: 1; */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }

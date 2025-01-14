@@ -7,3 +7,5 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
     // document.getElementById("menu").style.marginLeft= "0";
   }
+
+  

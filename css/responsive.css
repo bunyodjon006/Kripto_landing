@@ -57,6 +57,12 @@
         width: 240px;
         height: 160px;
     }
+    .section_two .container  {
+        margin-top: 100px;
+    }
+    .section_three .container .item-right .item_download {
+        display: none;
+    }
 
 }
 @media only screen and (max-width:1090px){
@@ -125,11 +131,81 @@
         width: auto;
         height: 300px;
     }
-    .container .item-left  .item-button button {
-        z-index: 999999;
+    .section_three .container .item-right #images {
+        width: auto;
+        margin-top: -50px;
+        height: 300px;
     }
+    .responsive_menu {
+        z-index: 99999;
+    }
+    /* .container .item-left  .item-button button {
+        /* z-index: 999999;4 */
+    /* }  */
     .item-right .show_content  {
         top: 80px;
         right: 80px;
     }
+    
+}
+@media only screen and (max-width:940px){
+    .section_three .container .item-right #images {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width:850px){
+    .item-left-main {
+        flex-direction: column;
+        align-items: start;
+    }
+    .container .item-left .item-title  h1 {
+        font-size: 2rem;
+        width: 400px;
+    }
+    .item-button {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .item-img {
+        display: none;
+    }
+    .item-right .show_content {
+        top:80px;
+        right: 150px;
+    }
+    .section_two .container {
+        margin-top: 30px;
+    }
+    .show_container .show-content {
+        top: 200px;
+    }
+    /* .section_two .container  {
+        margin-top: 50px;
+    } */
+}
+@media only screen and (max-width:420px){
+    .container .item-left .item-title  h1 {
+        font-size: 1.5rem;
+        width: 350px;
+    }
+    .section_three .container .item-left .item-title h1 {
+        width: 350px;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:380px ){
+    .container .item-left .item-title  h1 {
+        font-size: 1.4rem;
+        width: 320px;
+    }
+    .section_three .container .item-left .item-title h1 {
+        width: 320px;
+        font-size: 1.4rem;
+    }
+    .section_two .container {
+        margin-top: -10px;
+    }
+
 }
