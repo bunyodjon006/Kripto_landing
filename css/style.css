@@ -27,13 +27,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;background-color: #060606;
 }
 
 .main {
     width: 100%;
-    min-height: 150vh;
-    background-color: #060606;
+     height: auto;
+     padding-bottom: 10px;
+    
 }
 
 /* Header start */

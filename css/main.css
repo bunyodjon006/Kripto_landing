@@ -1,0 +1,104 @@
+:root {
+    --text-color: #f5f5f5;
+    --hover-color: #12f7ff;
+    --bg-color: #250821;
+    --secon-bg-color: #292e33;
+    --big-font: 2.5rem;
+    --norma-font: 2rem;
+    --neon-box-shadow: 0 0 .5rem#12f7ff;
+    --h2-font: 3rem;
+    --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3), 0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3), 0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3), 0 0 150px rgba(18, 247, 255, 0.3);
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secon-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--hover-color);
+    border-radius: 5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 150vh;
+    background-color: #060606;
+}
+
+.nav-item-content {
+    margin: 20px;
+}
+
+.parent-header {
+    padding: 20px;
+}
+
+.parent-header .parent-nav {
+    filter: blur(0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 100%;
+    width: full;
+    max-width: 1560px;
+    background: rgba(14, 0, 0, 0.2);
+    z-index: 2;
+    ;
+    backdrop-filter: blur(15px);
+    height: 80px;
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: #9b6fee7c;
+}
+
+.nav-item-content-ondered ul {
+    display: flex;
+}
+
+.nav-item-content-ondered ul li {
+    color: #fff;
+    list-style: none;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav-item-content-ondered ul li:hover {
+    color: blue;
+}
+
+.nav-item-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item-button button:hover {
+    background-color: #D08BFE;
+    color: white;
+}
+
+.nav-item-responsive {
+    display: none;
+
+}
