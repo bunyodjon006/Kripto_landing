@@ -72,6 +72,7 @@
     padding: 10px 20px;
     margin: 0 auto;
     width: 100%;
+    width: full;
     max-width: 1560px;
     background: rgba(14, 0, 0, 0.2);
     z-index: 2;
@@ -231,6 +232,7 @@
 .section_one {
     margin-top: 50px;
     width: 100%;
+    gap: 20px;
 }
 
 .container {
@@ -301,6 +303,9 @@
 /* Section 1 start */
 .section_two .container {
     margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .show_container {
     position: relative;
@@ -357,6 +362,10 @@
 .section_three .container {
     gap: 100px;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
 }
 .section_three .container .item-left .item-title h1{
     width: 400px;
@@ -367,14 +376,14 @@
 }
 .section_three .container .item-right #images {
     width: 300px;
-    height: 400px;
+    height: 350px;
 }
 .section_three .container .item-right {
     display: flex;
 }
 .section_three .container .item-right .item_download {
     margin-left: 10px;
-    margin-top: 320px;
+    margin-top: 260px;
 }
 .section_three .container .item-right .item_download  h2 {
     color: #fff;
@@ -393,4 +402,167 @@
     /* z-index: 1; */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+}
+.section_three .container {
+    justify-content: space-between;
+    display: flex;
+    max-width: 1280px;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+/* Section 3 end */
+/* Footer start */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Responsiv uchun qo'shildi */
+    padding: 20px;
+
+}
+
+.footer-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap; /* Mobil qurilmalar uchun */
+    gap: 10px;
+    margin-bottom: 20px; /* Mobilda yaxshi ko'rinish uchun */
+}
+
+.footer-title h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    width: auto; /* Kichik ekranlarda kenglikni avtomatik qildi */
+    color: #ffff;
+}
+
+.footer-text p {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: center; /* Mobilda markazlashtirish */
+}
+
+.footer-nav {
+    margin-top: 10px;
+    width: 100%; /* Kichik ekranlarda to'liq kenglik */
+    max-width: 900px; /* Katta ekranlarda cheklangan kenglik */
+    border: 1px solid;
+    border-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 5px solid #2c2c2c;
+    flex-wrap: wrap; /* Kichik ekranlar uchun yangi qatordan joylashadi */
+    padding: 10px;
+    gap: 10px; /* Elementlar orasida bo'sh joy */
+}
+
+.item-icons {
+    display: flex;
+    gap: 10px; /* Ikkita ikonka orasidagi bo'shliq */
+    flex-wrap: wrap; /* Kichik ekranlarda joylashadi */
+    justify-content: center; /* Mobilda markazlashgan */
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 10px; /* Elementlar orasida bo'sh joy */
+    flex-wrap: wrap; /* Kichik ekranlar uchun ustun shaklida */
+    justify-content: center; /* Markazlashtirilgan */
+    padding: 0;
+}
+
+.footer-nav ul li {
+    color: #fff;
+    font-family: sans-serif;
+    list-style: none;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer-nav ul li:hover {
+    color: blue;
+}
+
+.item-icons .item-icon {
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid #8C23D2;
+}
+
+.item-icons .item-icon img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+/* Footer end */
+@media only screen and (max-width: 768px) {
+    .footer-title h2 {
+        font-size: 1.5rem; /* Matnni kichiklashtirish */
+        text-align: center;
+    }
+
+    .footer-nav {
+        flex-direction: column; /* Elementlarni ustun qilib joylashtirish */
+        align-items: center;
+    }
+
+    .footer-nav ul {
+        gap: 5px; /* Bo'shliqlarni qisqartirish */
+    }
+
+    .item-icons {
+        gap: 5px; /* Ikonkalar orasidagi bo'shliqni qisqartirish */
+    }
+
+    .footer-nav ul li {
+        font-size: 0.9rem; /* Matn o'lchamini kichiklashtirish */
+    }
+
+    .item-icons .item-icon {
+        width: 40px; /* Ikonkalar hajmini kichraytirish */
+        height: 40px;
+    }
+
+    .item-icons .item-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-title h2 {
+        font-size: 1.2rem; /* Yanada kichik ekranlar uchun matn o'lchami */
+    }
+
+    .footer-nav ul li {
+        font-size: 0.8rem; /* Matn hajmini yanada kichraytirish */
+        margin: 5px;
+    }
+
+    .item-icons .item-icon {
+        width: 30px; /* Juda kichik ekranlar uchun ikonka hajmi */
+        height: 30px;
+    }
+
+    .item-icons .item-icon img {
+        width: 15px;
+        height: 15px;
+    }
 }
