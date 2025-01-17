@@ -376,4 +376,58 @@
         height: 200px;
     }
 }
+/* Footer end */
+@media only screen and (max-width: 768px) {
+    .footer-title h2 {
+        font-size: 1.5rem; /* Matnni kichiklashtirish */
+        text-align: center;
+    }
 
+    .footer-nav {
+        flex-direction: column; /* Elementlarni ustun qilib joylashtirish */
+        align-items: center;
+    }
+
+    .footer-nav ul {
+        gap: 5px; /* Bo'shliqlarni qisqartirish */
+    }
+
+    .item-icons {
+        gap: 5px; /* Ikonkalar orasidagi bo'shliqni qisqartirish */
+    }
+
+    .footer-nav ul li {
+        font-size: 0.9rem; /* Matn o'lchamini kichiklashtirish */
+    }
+
+    .item-icons .item-icon {
+        width: 40px; /* Ikonkalar hajmini kichraytirish */
+        height: 40px;
+    }
+
+    .item-icons .item-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-title h2 {
+        font-size: 1.2rem; /* Yanada kichik ekranlar uchun matn o'lchami */
+    }
+
+    .footer-nav ul li {
+        font-size: 0.8rem; /* Matn hajmini yanada kichraytirish */
+        margin: 5px;
+    }
+
+    .item-icons .item-icon {
+        width: 30px; /* Juda kichik ekranlar uchun ikonka hajmi */
+        height: 30px;
+    }
+
+    .item-icons .item-icon img {
+        width: 15px;
+        height: 15px;
+    }
+}
